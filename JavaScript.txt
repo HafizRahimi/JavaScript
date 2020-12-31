@@ -1,0 +1,3851 @@
+
+آموزش مقدماتی تا پیشرفته جاوا اسکریپت
+
+JavaScript
+https://toplearn.com/c/W6J
+
+74 Videos
+14:35:00 hours
+
+
+---------------------------------------------------------
+
+03
+VAR name = ''
+var JAN = 'hafiz'
+var num = 12345 
+var afg = false
+
+ALERT();
+alert(afg);
+
+TYPEOF
+alert(typeof num);
+
+
+function namefunction(){}
+
+function ali(){
+    var c = 40
+    var b = 3
+    var f = c+b
+    alert (f)
+}
+
+ropa function
+ali();
+
+ropa function html tag a med onclick:
+<a href="#" onclick="ali();">click me</a>
+
+
+
+
+
+
+
+04
+
+var name = 'hamid'
+var family = 'rahimi'
+var it19 = ['ali','hamid','hafiz']
+        NUM       0       1      2
+
+document.write(namevar);
+document.write(name + ' '+family);
+
+Array
+1  var nameArray = ['','',....]
+   var it19 = ['ali','hamid','hafiz']
+
+2  var nameArray = new Array("","",...) 
+2  var it19 = new Array("ali","hamid",'hafiz') 
+
+document.write(nameArray.length);
+document.write(clasit19.length);
+=> 3
+
+document.write(nameArray[NUM]);
+document.write("<br/>");
+document.write(claSIT19[1]);
+=> 
+hamid
+
+var itt19 = new Array("ali","hamid","hafiz"); 
+itt19[2] = 'maryam'
+document.write(itt19[2])
+=> maryam
+
+
+arrayname.sort();
+var it19 = new Array("hamid","zafiz","ali"); 
+var it1 = it19.sort();
+document.write(it1);
+=> ali hamid zafiz
+
+console.log(maneArray);
+brower clicka f12 sen Console
+
+
+
+
+
+
+05
+
+JS
+var x = 4;
+var y = 3;
+
+Html
+<p id="hhh">salam</p>
+
+var namevar = document.getElementById('ID Tsag');
+namevar.innerHTML = ... ;
+
+var jan = document.getElementById('hhh');
+jan.innerHTML = x-y;
+
+=> 1
+----------------------------------
+
+Html
+<p id="hhh">salam</p>
+
+JS
+var x = 5;
+var y = 3;
+var jan = document.getElementById('hhh');
+
+// + - / % -- ++
+
+// x++:            => 6
+// x--:            => 4
+// x = x / 2;      => 2.5
+
+
+// += -= /= *=
+
+// x = x += 4;     => 9
+// x = x *= 6;     => 30
+// x = x -= 3;     => 2
+
+jan.innerHTML = x;
+----------------------------------
+
+().value
+parseInt()
+parseFloat()
+Boolean()
+
+JS
+var jan = document.getElementById('hhh'); 
+
+function sum(){
+    var num1 = document.getElementById('num1').value;
+    var num2 = document.getElementById('num2').value;
+    num1 = parseInt(num1)
+    num2 = parseInt(num2)
+    
+    var sum = num1 + num2; 
+    jan.innerHTML = sum;
+}
+
+html
+<p id="hhh">salam</p>
+number 1 :<input type="number" id="num1">
+<br>
+number 2 : <input type="number" id="num2">
+<br>
+<input type="button" value="click me " onclick="sum()">
+
+JS
+var flo= parseFloat(12.5);
+var ggg= Boolean(0);
+console.log(ggg);
+
+
+
+
+
+06
+
+return
+
+Html
+<h1 id="ha1"></h1>
+
+js
+function sum(x, y) {
+  return x + y;
+}
+document.getElementById("ha1").innerHTML = sum(3,7);
+
+
+
+
+
+
+07
+
+var person = { name : 'hafiz' , family:'rahimi'}
+console.log(person.fullmane());
+
+t.x.p
+
+var person = {
+    name :'Hafiz',
+    Family : 'Rahimi',
+    age : 30,
+    fullmane : function(){
+        return this.name + ' ' + this.Family;
+    }
+};
+
+console.log(person.fullmane());
+
+
+
+
+
+08
+
+Date     datom och cklokan 
+
+Html
+
+<h1 >Lorem ipsum dolor sit.</h1>
+        <h2 id="hh1">Lorem ipsum dolor sit amet consectetur.</h2>
+        <button onclick="showdata()">Click me!</button>
+        <button onclick="this.innerHTML= Date ()">Click me!</button>
+        <br>
+        <input type="text" onchange="ddd(this.value)">
+
+
+JS
+
+function showdata(){
+    document.getElementById('hh1').innerHTML= Date();
+}
+function ddd(value){
+    document.getElementById('hh1').innerHTML= value;
+}
+
+
+
+
+
+09
+
+if , else :
+-----------
+
+var x = 5;
+if (x > 8) {
+    alert("True");
+}else{
+    alert("False");
+}
+
+
+
+else if:
+--------
+
+var time = 33;
+
+if (time <= 10  ) {
+    alert("Good Morning");
+} 
+else if (time < 18){
+    alert("Good Day")
+}
+else if (time < 20){
+    alert("Good Evening")
+}
+else {
+    alert("Good Night")
+}
+
+
+
+&&(och):
+--------
+
+var x = 9;
+if (x > 8 && x > 10) {
+    alert("True");
+}else{
+    alert("False");
+}
+
+
+
+||(eller):
+----------
+
+var x = 9;
+if (x > 8 || x > 10) {
+    alert("True");
+}else{
+    alert("False");
+}
+
+
+
+
+
+10
+
+switch, case och break:
+------  ----     -----
+
+var x = 4;
+
+switch(x){
+    case 1:{
+        alert("1")
+        break
+    }
+    case 2:{
+        alert("2")
+        break
+    }
+    case 3:{
+        alert("3")
+        break
+    }
+    case 4:{
+        alert("4")
+        break
+    }
+}
+
+
+switch, case, break och default:
+                        -------
+
+var x = 5;
+
+switch(x){
+    case 1:{
+        alert("1")
+        break
+    }
+    case 2:{
+        alert("2")
+        break
+    }
+    case 3:{
+        alert("3")
+        break
+    }
+    case 4:{
+        alert("4")
+        break
+    }
+    default:{
+        alert("Not Found");
+        break;
+    }
+}
+
+
+
+två case (|| in if (eller)):
+--- ----
+var name = "iman";
+
+switch(name){
+    case "ali":{
+        alert("HEllo Ali")
+        break
+    }
+    case "iman":
+    case "Mohammad":{
+        alert("Hello")
+        break
+    }
+
+    default:{
+        alert("hi");
+        break;
+    }
+}
+
+
+
+
+
+11
+
+HTML
+<h1>Javascript</h1>
+<p id="result"></p>
+
+JAVASCRIPT
+
+var names = ["Ali", "Hamid","Hafiz"];
+var element = document.getElementById("result");
+var text = names[0] + " <br/> <br/>";
+text += names[1] + " <br/>";
+text += names[2] + " <br/>";
+element.innerHTML= text;
+
+
+for:
+---
+
+EXE1
+
+HTML
+<h1>Javascript</h1>
+<p id="result"></p>
+
+JAVASCRIPT
+var names = ["Ali", "Hamid","Hafiz", "Marjam"];
+var element = document.getElementById("result");
+var text = "";
+
+for(var i = 0; i < names.length; i ++){
+    text += names[i] + "<br/>";
+}
+
+element.innerHTML= text;
+
+
+
+EXE2
+
+var i;
+
+for(i = 0 ; i<3 ; i++){
+    alert(i);
+}
+
+eller
+
+var i = 0;
+
+for(; i<3 ;){
+    alert(i);
+    i++
+}
+
+EXE3
+
+var names = ["Ali", "Hamid","Hafiz", "Marjam"];
+
+for(n in names){
+    alert(names[n]);
+}
+
+
+
+-----------------
+12
+
+do{}
+while{}
+
+break;
+continue;
+
+
+
+-----------------
+13
+
+try{}
+catch{}
+finally{}
+-----------------
+14
+this
+let 
+
+this:
+
+    var firsName = "Ali";
+    var person = {
+        firsName : "Hafizullah",
+        lastName : "Rahimi",
+        FullName : function(){
+            return firsName + " " + this.lastName;
+        }
+    }
+    alert(person.FullName());
+    => Ali Rahimi
+
+    or 
+
+        var firsName = "Ali";
+    var person = {
+        firsName : "Hafizullah",
+        lastName : "Rahimi",
+        FullName : function(){
+            return this.firsName + " " + this.lastName;
+        }
+    }
+    alert(person.FullName());
+    => Hafizullah Rahimi
+
+
+let:
+
+EXE1:
+    var x = 10;
+    {
+        var x = 2;
+    }
+    alert(x);
+    => 2
+    
+    let u = 10;
+    {
+        let u = 2;
+    }
+    alert(u);
+    => 10
+
+
+EXE2:
+    let i = 5;
+    for (let i = 0; i<10; i++){
+        // alert(i);
+    }
+    alert(i);
+    =>5
+
+    var i = 5;
+    for (var i = 0; i<10; i++){
+        // alert(i);
+    }
+    alert(i);
+
+-----------------
+15
+const 
+
+const:
+EXE1:
+    const server = "https:toplearn.com/api";
+    const price = 2600;
+    const price = 100;
+    alert(price);
+    => Error
+
+
+EXE2:
+    const price = 2600;
+    price += 100;
+    alert(price);
+    => Error
+
+
+EXE3:
+    var x = 20;
+    {
+        const x = 5;
+    }
+    alert(x);
+    =>5
+
+
+    const y = 10;
+    {
+        const y = 4;
+    }
+    alert(y);
+    =>10
+
+
+EXE4:
+    const person = { name: 'Hafiz', family: 'Rahimi', age: 30};
+    person.address = 'Swedan';
+    console.log(person);
+    =>{name: "Hafiz", family: "Rahimi", age: 30, address: "Swedan"}
+
+
+EXE5:
+    const person = { name: 'Hafiz', family: 'Rahimi', age: 30};
+    person.name = 'Ali';
+    console.log(person);
+    =>{name: "Ali", family: "Rahimi", age: 30}
+
+
+EXE6:
+   const person = { name: 'Hafiz', family: 'Rahimi', age: 30};
+   person = 'ali';
+   console.log(person);
+   => Error
+
+EXE7:
+   const names = ["Iman","Sara", "Ali","Hamid"];
+   names.push("Reza");
+   console.log(names);
+   =>["Iman", "Sara", "Ali", "Hamid", "Reza"]
+
+
+-----------------
+16
+debugger
+this is for debugging the code
+
+
+debugger:
+EXE:
+
+debugger;
+var number1 = 5;
+var number2 = 12;
+var result = number1 + number2;
+document.getElementById('text').innerHTML= result;
+
+=> on brower F9: next, F8: finish
+
+-----------------
+17
+tag form
+onsubmit
+required
+
+
+
+
+tag form and onsubmit:
+</head>
+<body>
+    <h1>index1</h1>
+    <form name="myform" action="/iman.asp" method="POST" onsubmit="return myfunction()" >
+        Name : <input type="text" name="fname">
+        <input type="submit" value="Submit">
+        <br>
+    </form>
+</body>
+<script>
+    function myfunction(){
+        var x = document.forms["myform"]["fname"].value;
+        if(x == ""){
+            alert("Please enter your name");
+            return false;
+        }
+    };
+</script>
+</html>
+
+required:
+
+    <body>
+        <h1>index3</h1>
+        <form action="index1.html" method="POST">
+        Name: <input type="text" name="fname" id="" required>
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+
+-----------------
+18
+
+var Name = {: "", :"", : ""};
+Name.car = "volvo";
+new person();
+peaple.push();
+
+
+
+
+var Name = {: "", :"", : ""};
+Name.car = "volvo";
+EXE:
+    var Hafiz = {name: "Hafiz", family:"Rahimi", age: "19"};
+    Hafiz.carname = "volvo";
+
+    => {name: "Hafiz", family:"Rahimi", age: "19" car: "volvo"}
+
+
+new person();
+EXE1:
+
+    var Hafiz = {name: "Hafiz", family:"Rahimi", age: "19"};
+
+    function person(Name, Family, Age){
+        this.name = Name;
+        this.family = Family;
+        this.age = Age;
+    }
+
+    var iman = new person("Iman","moradi", 33);
+    console.log(iman.age);
+
+
+
+peaple.push();
+EXE2:
+    var peaple = [];
+    peaple.push(new person("mahmud", "narimai", 19));
+    peaple.push(new person("hamed", "heydari", 3));
+    peaple.push(new person("raha", "hamidi", 11));
+
+    console.log(peaple);
+
+
+
+EXE3:
+    var peaple = [];
+    peaple.push(new person("mahmud", "narimai", 19));
+    peaple.push(new person("hamed", "heydari", 3));
+    peaple.push(new person("raha", "hamidi", 11));
+
+    var text = "";
+    for (x in peaple){
+        text+= peaple[x].name + "  "  + peaple[x].Family + "  " + peaple[x].age + "<br/>";
+    }
+
+    document.getElementById("demo").innerHTML = text;
+
+
+-----------------
+19
+
+function
+
+1 function name (){};
+2 var name = function(){};
+3 var name = new Function("","");
+
+4 (function name(){})();      
+star the function without call out the function ()()
+
+5 var name = () => ;  eller  name = () => ;
+6 var name = () => {}; eller name = () => {};
+
+7 .toString()
+
+
+
+
+
+1 function name (){}; :
+  function Myfunction(){
+    var a, b ,c;
+    a = 20;
+    b = 10;
+    c = a * b;
+    alert(c);
+}
+Myfunction();
+
+
+2 var name = function(){}; :
+var x = function (a,b){c=a+b; return c;};
+var e = x(2,4);
+console.log(e);
+
+
+3 var name = new Function("",""); :
+var my = new Function("a","b","return a*b");
+var p = my(3,6);
+console.log(p);
+
+4 (function name(){})(); :
+(function Myfunction(){
+    var a, b ,c;
+    a = 20;
+    b = 10;
+    c = a * b;
+    alert(c);
+})();
+
+
+5 var name = () => ;  eller  name = () => ; :
+sum = (a,b) => a+b;
+var sum = (a,b) => a+b;
+var u = sum(5,6) + 4;
+console.log(u);
+
+
+6 var name = () => {}; eller name = () => {};
+var sum = (a,b) => { c=a+b; return c;};
+sum = (a,b) => { c=a+b; return c;};
+var u = sum(5,6);
+console.log(u);
+
+
+7 .toString() :
+var b = 3;
+var c = "56";
+var o = b.toString();
+console.log(b);
+
+
+-----------------
+20
+function
+
+1 name===undefined
+2 arguments and length
+3 function name(){
+    function name(){
+    }
+}
+
+
+
+
+1 name===undefined:
+    function myfunction(x,y){
+        if(x===undefined){
+            x = 0;
+        }
+        
+        if(y===undefined){
+            y=0;
+        }
+        return x+y;
+    }
+    var sum = myfunction(3);
+    console.log(sum);
+
+
+2 arguments and length:
+function myfunction(){
+    for(var i = 0; i< arguments.length; i++){
+        console.log(arguments[i]);
+    }
+}
+
+myfunction('54', 'ali', 22, "nemat");
+
+
+3 function name(){
+    function name(){
+    }
+} :
+
+function add(){
+    var x = 0;
+    function plus(){
+        x+=1;
+    }
+    plus();
+    plus();
+    plus();
+    plus();
+    plus();
+    return x;
+}
+
+console.log(add());
+
+
+-----------------
+21
+1 document.getElementById('')
+2 document.getElementsByTagName('')
+3 document.getElementsByClassName('');   name[].innerHTML
+4 document.querySelectorAll("TagName.ClassName")
+5 document.forms['']
+
+
+HTML:
+  <body>
+    <p class="name">Hafiz</p>
+    <p id="family">Rahimi</p>
+    <p>homayon</p>
+    <p>jafari</p>
+    <p id="demo"></p>
+  </body>
+
+
+1 document.getElementById(''):
+    var x = document.getElementById('demo').innerHTML = 'iman';
+    console.log(x);
+
+
+2 document.getElementsByTagName('')
+    var ps = document.getElementsByTagName('p');
+    for (n in ps){
+        console.log(ps[n].innerHTML);
+    }
+
+
+3 document.getElementsByClassName('');
+    var k = document.getElementsByClassName('name');
+    console.log(k[0].innerHTML);
+
+
+4 document.querySelectorAll("TagName.ClassName"):
+    var x = document.querySelectorAll("p.name");
+    console.log(x[0].innerHTML);
+
+
+5 document.forms['']:
+  <body>
+    <form action="" id="form01">
+      first name : <input type="text" name="FName" value="Hafiz" />
+      <br />
+      <br />
+      last name : <input type="text" name="LName" value="Rahimi" />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <button id="b" onclick="Myfunction()">Start</button>
+    <p id="text"></p>
+  </body>
+  <script>
+    function Myfunction () {
+      var x = document.forms['form01'];
+      var text ="";
+      for (var i = 0; i < x.length; i++) {
+          text+= x.elements[i].value + '<br/>';
+      }
+      document.getElementById("text").innerHTML = text;
+    }
+  </script>
+
+
+-----------------
+22
+
+1 document.getElementById('').src =''
+2 document.getElementsByClassName('')[0].style.color ="";
+
+3 setInterval(name, 5)  tills 5 miliskunder ropar function name 
+  OBS (sekund = 1000 millisekunder)
+
+4 clearInterval(name)  stopa function name
+
+
+
+
+
+1 document.getElementById('').src =''
+2 document.getElementsByClassName('')[0].style.color ="";
+<body>
+    <h1><a href="https://www.google.com/" class="title">Hafizullah Rahimi</a></h1>
+    <img id="windows">
+    <img id="windows1">
+</body>
+<script>
+    document.getElementById('windows').src = 'https://toplearn.com/img/course/2834177f-b725-4d29-a0a6-93a581ae35c3KALI-linux1-compressor.png';
+    var bild2 =  document.getElementById('windows1');
+    bild2.src = './windows.jpg';
+    bild2.style.height = '80%';
+    bild2.style.width = '100%';
+
+    document.getElementsByClassName('title')[0].style.color ="red"
+</script>
+
+
+
+3 setInterval(name, 5)  tills 5 miliskunder ropar function name 
+OBS (sekund = 1000 millisekunder)
+4 clearInterval(name)  stopa function name:
+
+EXE1:
+        <img
+            src="https://toplearn.com/img/course/img-course-%DA%86%D9%87%D8%A7%D8%B1-%D8%B4%D9%86%D8%A8%D9%87-%DB%B2%DB%B0-%D9%81%D8%B1%D9%88%D8%B1%D8%AF%DB%8C%D9%86-%DB%B1%DB%B3%DB%B9%DB%B9-24894817-718.jpg"
+            id="windows"
+        />
+    </body>
+    <script>
+        var timer = setInterval(Change, 1000);
+        function Change() {
+            var elem = document.getElementById('windows');
+            elem.src =
+                'https://toplearn.com/img/course/2834177f-b725-4d29-a0a6-93a581ae35c3KALI-linux1-compressor.png';
+            clearInterval('timer');
+        }
+    </script>
+
+
+
+EXE2:
+<style>
+    #container{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: skyblue;
+        border:2px solid black;
+    }
+    #animate{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background: rgb(253, 0, 198);
+        border:2px solid rgb(183, 250, 0);
+    }
+</style>
+<body>
+    <h1><a href="https://www.google.com/" class="title">Hafizullah Rahimi</a></h1>
+    <p>
+        <button onclick="myfunction()">Click me!</button>
+    </p>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+</body>
+<script>
+    function myfunction(){
+        var elem = document.getElementById('animate');
+        var pos = 0;
+        var id = setInterval(frame, 100);
+        function frame(){
+            if(pos == 350){
+                clearInterval(id)
+            }else{
+                pos++;
+                elem.style.top = pos + "px";
+                elem.style.left = pos + "px";
+            }
+        }
+
+    }
+</script>
+
+
+
+-----------------
+23
+
+1 onclick
+2 <h1 onclick="FunctionName(this)"></h1>
+
+3 onclick and Date()
+  OPS( Date() show tiden and datom )
+
+4 document.getElementById('').onclick = salamHafiz;
+  OPS(salamHafiz is a function)
+
+5 onload="" in body tag
+  OPS(onload start when sidan body is load) 
+
+6 onchange = "", .value and .toUpperCase
+  OPS(onchange star whwn you are finish Change,
+  value is what have element and
+  toUpperCase is going to big words)
+
+7 onmouseover="" onmouseout=""
+8 onmousedown="" onmouseup=""
+
+
+
+
+1 onclick:
+  <body>
+    <button onclick="this.innerHTML = 'OOPS!'">CLICK ME!</button>
+  </onload=>
+
+
+
+2 <h1 onclick="FunctionName(this)"></h1>:
+
+  <body>
+    <h1 onclick="ChangeText(this)">click me2!</h1>
+    <h1 onclick="ChangeText(this)">click me2!</h1>
+    <h1 onclick="ChangeText(this)">click me2!</h1>
+    <h1 onclick="ChangeText(this)">click me2!</h1>
+    <h1 onclick="ChangeText(this)">click me2!</h1>
+    <h1 onclick="ChangeText(this)">click me2!</h1>
+  </body>
+  <script>
+    function ChangeText(id){
+        id.innerHTML = 'ooooops!!!!!!!!!!!!!!';
+    }
+  </script>
+
+
+
+3 onclick and Date():
+
+  <body>
+    <BUtton onclick="displayDate()">What time is it?</BUtton>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function displayDate(){
+        document.getElementById('demo').innerHTML = Date();
+    }
+  </script>
+
+
+
+4 document.getElementById('').onclick = salamHafiz;
+
+  <body>
+    <BUtton id="mybtn">Hafiz</BUtton>
+</body>
+<script>
+    document.getElementById('mybtn').onclick = salamHafiz;
+    function salamHafiz(){
+        alert('salam Hafiz');
+    }
+</script>
+
+
+
+5 onload="" in body tag:
+
+  <body onload="loader()">
+    <h1>Hafizullah Rahimi</h1>
+    <p id="text">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos architecto
+      vel eligendi, enim, quasi dolores quos dolorem saepe ut vitae amet
+      expedita ex repudiandae consectetur? Aliquid impedit odit ipsa delectus
+      voluptas reiciendis ip sam libero incidunt ullam, molestias in facere ,
+      error similique. Magnam, labore hic.
+    </p>
+  </body>
+  <script>
+    function loader () {
+      document.getElementById('text').innerHTML = 'body is load'
+    }
+  </script>
+
+
+
+
+6 onchange = "", .value and .toUpperCase:
+
+  <body>
+    <h1>Hafizullah Rahimi</h1>
+    Name is: <input type="text" id="fname" onchange="myfunction()" />
+  </body>
+  <script>
+    function myfunction () {
+      element = document.getElementById('fname');
+      element.value = element.value.toUpperCase();
+    }
+  </script>
+  
+
+
+7 onmouseover="" onmouseout="":
+
+  <body>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+    style="background-color: royalblue;width: 120px; height: 30px; margin: 60px; padding: 80px; color: white;">
+    Mouse over me</div>
+    
+    </body>
+  <script>
+    function mOver(obj){
+        obj.innerHTML="Tanck you!";
+    }
+    function mOut(obj){
+        obj.innerHTML= "Mouse over Me"
+    }
+  </script>
+
+
+
+8 onmousedown="" onmouseup=""
+
+<body>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+    style="background-color: royalblue;width: 120px; height: 30px; margin: 60px; padding: 80px; color: white;">
+    Click me</div>
+</body>
+<script>
+    function mDown (obj){
+        obj.style.backgroundColor = 'red';
+        obj.innerHTML = "Release Me!";
+
+    }
+    function mUp(obj){
+        obj.style.backgroundColor = 'yellow';
+        obj.innerHTML = " Tanck you!"
+    }
+</script>
+
+
+
+
+-----------------
+24
+
+1  .addEventListener("click", Namefunctionm)
+2  .addEventListener("mouseover",Namefunctionm)
+3  .addEventListener("mouseout",Namefunctionm)
+   .innerHTML += 'Mouse Click! <br/>'
+
+4  .addEventListener("resize",Namefunctionm)
+   1 window.addEventListener("resize",Namefunctionm)
+   2 window.innerWidth
+   3 window.innerHeight
+   4 Math.random()
+
+5  .addEventListener("resize",function(){
+       Namefunction(value)
+    } );
+
+
+
+
+
+
+
+
+1  .addEventListener("click", Namefunction):
+   
+   EXE1 inte så bra göra så här:
+
+   <body>
+    <h1>Mr.Hafizullah Rahimi</h1>
+    <button id="mybtn">Try it</button>
+    <script>
+        document.getElementById('mybtn').addEventListener("click", function(){
+            alert("Hej på dig");
+        });
+    </script>
+</body>
+
+
+    EXE2 det är bästa:
+
+    <h1>Mr.Hafizullah Rahimi</h1>
+    <button id="mybtn">Try it</button>
+    <script>
+        var x = document.getElementById("mybtn");
+        x.addEventListener("click",myfunction1);
+        x.addEventListener("click",myfunction2);
+        function myfunction1(){
+            alert("Hej på dig!")
+        }
+        function myfunction2(){
+            alert("tjäna bästa Hafiz!")
+        }
+    </script>
+
+
+
+2  .addEventListener("mouseover",Namefunctionm)
+3  .addEventListener("mouseout",Namefunctionm)
+   .innerHTML += 'Mouse Click! <br/>' :
+
+       <h1>Mr.Hafizullah Rahimi</h1>
+    <button id="mybtn">Try it</button>
+    <p id="demo">start <br></p>
+    <script>
+        var t = document.getElementById("demo");
+        var x = document.getElementById("mybtn");
+        x.addEventListener("mouseover",mover);
+        x.addEventListener("mouseout",mout);
+        x.addEventListener("click", mclick);
+        function mover (){
+            x.style.backgroundColor = 'red';
+            t.innerHTML += 'Mouse Over! <br/>';
+        }
+        function mout(){
+            x.style.padding = "3vw";
+            t.innerHTML += 'Mouse Out! <br/>';
+        }
+        function mclick(){
+            x.style.backgroundColor = '';
+            x.style.padding = "";
+            t.innerHTML += 'Mouse Click! <br/>';
+        }
+    </script>
+
+
+4  .addEventListener("resize",Namefunctionm)
+   1 window.addEventListener("resize",Namefunctionm)
+   2 window.innerWidth
+   3 window.innerHeight
+   4 Math.random() :
+
+<body>
+    <h1>Mr.Hafizullah Rahimi</h1>
+    <button id="mybtn">Try it</button>
+    <p id="demo">Width - Height<br></p>
+    <p id="demo1">random<br></p>
+    <script>
+        window.addEventListener("resize",myfunction );
+        var t = document.getElementById("demo");
+        var t1 = document.getElementById("demo1");
+        function myfunction (){
+            t.innerHTML = window.innerWidth + " - " + window.innerHeight;
+            t1.innerHTML =  Math.random();
+        }
+    </script>
+</body>
+
+
+5  .addEventListener("resize",function(){
+       Namefunction(value)
+    } );
+
+EXE1:
+
+<body>
+    <h1>Mr.Hafizullah Rahimi</h1>
+    <button id="mybtn">Try it</button>
+    <p id="demo">Width<br></p>
+    <script>
+        window.addEventListener("resize",function(){
+            myfunction(125)
+        } );
+        var t = document.getElementById("demo");
+        function myfunction (w){
+            t.innerHTML = w;
+        }
+    </script>
+</body>
+
+EXE2:
+
+<body>
+    <h1>Mr.Hafizullah Rahimi</h1>
+    <button id="mybtn">Try it</button>
+    <p id="demo">Width<br></p>
+    <script>
+        window.addEventListener("resize",function(){
+            myfunction(window.innerWidth)
+        } );
+        var t = document.getElementById("demo");
+        function myfunction (w){
+            t.innerHTML = w;
+        }
+    </script>
+</body>
+
+
+-----------------
+25
+
+1  .createElement("nametag")
+2  .createTextNode("text")
+3  .appendChild()
+4  .insertBefore(name2,name1) ligger name2 before name1
+5  .removeChild()
+6  .replaceChild()       new element,old element
+
+
+
+
+
+1  .createElement("nametag")  
+2  .createTextNode("text")
+3  .appendChild():
+
+    <div id="div1">
+        <p id="p1"> this is p1</p> 
+        <p id="p3"> this is p2</p> 
+    </div>
+    <script>
+        var newp = document.createElement("p");
+        var textp = document.createTextNode("This is new p");
+        newp.appendChild(textp);
+        var div = document.getElementById("div1");
+        div.appendChild(newp);
+    </script>
+
+
+
+4  .insertBefore(name2,name1):
+
+    <div id="div1">
+        <p id="p1"> this is p1</p> 
+        <p id="p2"> this is p2</p> 
+    </div>
+    <script>
+        var newp = document.createElement("p");
+        var textp = document.createTextNode("This is new p");
+        newp.appendChild(textp);
+        var div = document.getElementById("div1");
+        var p2 = document.getElementById("p2");
+        div.insertBefore(newp,p2);
+    </script>
+
+
+
+5  .removeChild():
+
+    <div id="div1">
+        <p id="p1"> this is p1</p> 
+        <p id="p2"> this is p2</p> 
+    </div>
+    <script>
+        var div1 = document.getElementById("div1");
+        var p1 = document.getElementById("p1");
+        div1.removeChild(p1);
+    </script>
+   
+
+
+6  .replaceChild():
+
+    <div id="div1">
+        <p id="p1"> this is p1</p> 
+        <p id="p2"> this is p2</p> 
+    </div>
+    <script>
+        var div1 = document.getElementById("div1");
+        var p1 = document.getElementById("p1"); 
+
+        var newp = document.createElement("p");
+        var node = document.createTextNode("This  is a NEW P");
+        newp.appendChild(node);
+        div1.replaceChild(newp,p1);
+    </script>
+
+
+
+-----------------
+26
+
+1  p1.innerHTML = p2.innerHTML
+2  .length
+
+
+1  p1.innerHTML = p2.innerHTML
+2  .length:
+
+<body>
+    <h><a href="#">Hafizullah Rahimi</a></h>
+    <p>Hafiz</p>
+    <p>Nemat jan ghand lalekhu</p>
+    <p id="demo"></p>
+    <script>
+        var myCollection = document.getElementsByTagName('p');
+        var demo = document.getElementById('demo');
+        var LMC = myCollection.length;
+        demo.innerHTML = myCollection[0].innerHTML + "<br/>" + "Length: " + LMC;
+    </script>
+</body>
+
+EXE2;
+
+<body>
+    <h><a href="#">Hafizullah Rahimi</a></h>
+    <p>Hej på Hafiz</p>
+    <p>Hej påp Nemat </p>
+    <p>Hej på Hamid</p>
+    <p>Hej på william</p>
+    <p>Hej på frida</p>
+    <p id="demo"></p>
+    <button onclick="ChangeNames()"> click me!</button>
+    <script>
+        function ChangeNames(){
+            var allP = document.getElementsByTagName('p');
+            var text = "Jan ghand gole";
+            var i;
+            for(i=0; i< allP.length; i++){
+                allP[i].style.color = 'red';
+                allP[i].innerHTML += " " + text;
+            }
+        }
+    </script>
+</body>
+
+
+
+-----------------
+27
+
+1  window.innerWidth 
+   document.documentElement.clientHeight
+   document.body.clientHeight
+
+   window.innerHeight
+    document.documentElement.clientHeight
+    document.body.clientHeight
+
+2  screen.availWidth
+   screen.availHeight
+
+3  window.location.href
+   window.location.pathname
+   window.location.protocol
+   window.location.hostname
+
+4  window.location.assign ("")    ("https://google.com")
+
+
+
+
+
+1  EXE:
+
+    <body>
+        <p id="demo"></p>
+        <script>
+            var W =
+                window.innerWidth 
+                ||document.documentElement.clientHeight
+                || document.body.clientHeight
+                ;
+            var H = window.innerHeight
+            || document.documentElement.clientHeight
+            || document.body.clientHeight
+            ;
+            document.getElementById("demo").innerHTML = 'Browser inner windows width: '+ W +' , ' +'height: '+ H;
+        </script>
+    </body>
+
+
+2  screen.availWidth
+   screen.availHeight:
+
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            document.getElementById("demo").innerHTML= screen.availWidth;
+            document.getElementById("demo1").innerHTML= screen.availHeight;
+        </script>
+    </body>
+
+
+3  window.location.href
+   window.location.pathname
+   window.location.protocol
+   window.location.hostname:
+
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            document.getElementById('demo').innerHTML= window.location.href;
+            document.getElementById('demo1').innerHTML= window.location.pathname;
+            document.getElementById('demo2').innerHTML= window.location.protocol;
+            document.getElementById('demo3').innerHTML= window.location.hostname;
+        </script>
+    </body>
+
+
+
+4  window.location.assign("https://google.com"):
+    <body>
+        <p id="demo"></p>
+        <button onclick="my()">Click me!</button>
+        <script>
+            function my(){
+                window.location.assign("https://google.com");
+            }
+        </script>
+    </body>
+
+
+-----------------
+28
+history
+
+1   window.history.back()
+2   window.history.forward()
+
+
+HTML:
+    <body>
+        <h1>Hafizullah Rahimi</h1>
+        <a href="ContacUs.html"> ContacUs</a>
+        <br>
+        <a href="AboutUs.html">AboutUs</a>
+        <br>
+        <br>
+        <button onclick="goBack()">Back</button>
+        <button onclick="goForward()">Forward</button>
+        <script src="script.js"></script>
+    </body>
+
+JS:
+function goBack(){
+    window.history.back()
+}
+
+function goForward(){
+    window.history.forward()
+}
+
+
+-----------------
+29
+alert('')
+confirm("")
+prompt("","")
+alert(' \n ') 
+
+
+
+EXE1: alert('')
+
+    <body>
+        <h1>Hafizullah Rahimi</h1>
+        <button onclick="myfunction()">Try It</button>
+        <script>
+            function myfunction(){
+                alert('Hej på dig Hafizullah');
+            }
+        </script>
+    </body>
+
+
+EXE2: confirm("")
+
+    <body>
+        <h1>Hafizullah Rahimi</h1>
+        <button onclick="myfunction()">Try It</button>
+        <p id="demo"></p>
+        <script>
+            function myfunction(){
+                var txt = '';
+                if ( confirm("Press a Button!")) {
+                    txt = 'You press Ok!'
+                }else{
+                    txt="You Press Cancel!"
+                }
+                document.getElementById('demo').innerHTML= txt;
+            }
+        </script>
+    </body>
+
+
+
+EXE3: prompt("","")
+
+    <body>
+        <h1>Hafizullah Rahimi</h1>
+        <button onclick="myfunction()">Try It</button>
+        <p id="demo"></p>
+        <script>
+            function myfunction(){
+                var txt = '';
+                var person = prompt("Please Enter Your Name :","Hafizullah rahimi");
+                if(person== null || person== ""){
+                    txt = "User Cancelled The Prompt!";
+                }
+                else if (person =="Hafizullah") {
+                    txt= "Hej på Hafizullah rahimi";
+                }
+                else{
+                    txt= "Hej på " + person;
+                }
+                document.getElementById('demo').innerHTML= txt;
+            }
+        </script>
+    </body>
+
+
+EXE4: alert(' \n ') 
+<button onclick="alert('Hej på dig! \nHur mår du?')">Try It</button>
+
+
+-----------------
+30
+setTimeout(fuunction,3000)
+
+clearTimeout()
+
+setInterval (function, 1000)
+   new Date()
+   .toLocaleTimeString()
+   .toLocaleString()
+   .toLocaleDateString()
+
+clearInterval()
+
+
+
+EXE1:  setTimeout(fuunction,time whit miliskunder)
+
+    <body>
+        <h1>Hafizullah Rahimi</h1>
+        <button onclick="setTimeout(myfunction,3000)">Try It!</button>
+        <script>
+            function myfunction(){
+                alert('Hej på dig Hafizullah');
+            }
+        </script>
+    </body>
+
+
+
+EXE2: clearTimeout()
+
+    <body>
+        <h1>Hafizullah Rahimi</h1>
+        <button onclick="myvar = setTimeout(myfunction,2000)">Try It !</button>
+        <button onclick="clearTimeout(myvar)">Stop</button>
+        <script>
+            function myfunction(){
+                alert('Hej på dig Hafizullah');
+            }
+        </script>
+    </body>
+
+
+
+EXE3:
+setInterval (function, 1000)
+   new Date()
+   .toLocaleTimeString()
+   .toLocaleString()
+   .toLocaleDateString()
+
+
+    <body>
+        <h1>Hafizullah Rahimi</h1>
+        <p id="demo"></p>
+        <script>
+            var myTimer = setInterval(myfunction, 1000);
+            function myfunction() {
+                var t = new Date();
+                document.getElementById(
+                    'demo'
+                ).innerHTML = t.toLocaleTimeString();
+            }
+        </script>
+    </body>
+
+
+
+EXE4:  clearInterval()
+
+    <body>
+        <h1>Hafizullah Rahimi</h1>
+        <p id="demo"></p>
+        <button onclick="clearInterval(myTimer)">Stop</button>
+
+
+        <script>
+            var myTimer = setInterval(myfunction, 1000);
+            function myfunction() {
+                var t = new Date();
+                document.getElementById(
+                    'demo'
+                ).innerHTML = t.toLocaleTimeString();
+            }
+        </script>
+    </body>
+
+
+-----------------
+31
+
+cookie:
+https://www.w3schools.com/js/js_cookies.asp
+
+onload="":
+<body onload="checkCookie()"></body>
+
+
+-----------------
+32 
+32 - 41 AJAX 
+
+
+OBS:( video 32 va 33 mohem nist)
+
+Ajax:
+https://www.w3schools.com/js/js_ajax_intro.asp
+
+XMLHttpRequest()
+.responseText
+.open("GET", "namefile", true)
+.send()
+
+EXE:
+<body>
+    <button onclick="loadDoc()">Click me!</button>
+    <p id="demo"></p>
+
+    <script>
+        function loadDoc(){
+            var xhttp =new XMLHttpRequest();
+
+            xhttp.onreadystatechange = function(){
+                document.getElementById('demo').innerHTML= this.responseText;
+            }
+
+            xhttp.open("GET", "info.txt", true);
+            xhttp.send();
+        }
+    </script>
+</body>
+
+
+-----------------
+33
+
+OBS:( video 32 va 33 mohem nist)
+
+
+-----------------
+34
+Ajax
+A = Async
+J = JavaScript
+A = API
+X = XHR Api {
+    Text File
+    XML
+    Json
+}
+
+
+
+-----------------
+35
+
+new XMLHttpRequest()
+.open('Get', 'url', false);
+.send();
+
+document.write()
+.responseText
+
+.open('Get', 'url', false);
+.open('Get', 'url', true);
+
+
+
+OBS: install Web Service in chrome
+     https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?utm_source=chrome-app-launcher-info-dialog
+
+
+EXE1:
+new XMLHttpRequest()
+.open('Get', 'url', false);
+.send();
+
+  in the HTML File:
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.txt File
+     Hej på dig!
+    Hafizullah Rahimi
+    Jag hoppas mår du bra.
+
+  in the JavaScript File:
+     var request = new XMLHttpRequest();
+     request.open('Get','data.txt',false )
+     request.send();
+     console.log(request);
+
+
+
+EXE2:
+new XMLHttpRequest()
+.open('Get', 'url', false);
+.send();
+
+    in the HTML File:
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data1111.txt File:
+     Hej på dig!
+    Hafizullah Rahimi
+    Jag hoppas mår du bra.
+
+  in the JavaScript File:
+     var request = new XMLHttpRequest();
+     request.open('Get','data.txt',false )
+     request.send();
+     if (request.status === 200) {
+     console.log(request);
+     }else{
+     console.log('error')
+     }
+  
+
+
+EXE3:
+document.write()
+.responseText
+
+    in the HTML File:
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.txt File:
+     Hej på dig!
+    Hafizullah Rahimi
+    Jag hoppas mår du bra.
+
+  in the JavaScript File:
+     var request = new XMLHttpRequest();
+     request.open('Get','data.txt',false );
+     request.send();
+     if (request.status === 200) {
+     console.log(request);
+     document.write(request.responseText);
+     }else{
+     console.log('error');
+     }
+
+
+EXE4:
+.open('Get', 'url', false):
+
+    in the HTML File:
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.txt File:
+     Hej på dig!
+    Hafizullah Rahimi
+    Jag hoppas mår du bra.
+
+  in the JavaScript File:
+     for(var i=0;i<100;i++){
+     var request = new XMLHttpRequest();
+     request.open('Get','data.txt',false );
+     request.send();
+     if (request.status === 200) {
+     console.log(request);
+     document.write(request.responseText);
+     }else{
+     console.log('error');
+     }
+     }
+
+    
+EXE5:
+.open('Get', 'url', true):
+
+    in the HTML File:
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.txt File:
+    Hej på dig!
+    Hafizullah Rahimi
+    Jag hoppas mår du bra.
+
+  in the JavaScript File:
+     for(var i=0;i<100;i++){
+     var request = new XMLHttpRequest();
+     request.open('Get','data.txt',true );
+     request.send();
+     if (request.status === 200) {
+     console.log(request);
+     document.write(request.responseText);
+     }else{
+     console.log('error');
+     }
+     }
+
+
+-----------------
+36
+.open('Get', 'url'); = .open('Get', 'url', true);
+
+.onreadystatechange
+.readyState ( is 4)
+.status (is 200)
+.writeln
+
+
+EXE1:
+.open('Get', 'url'); = .open('Get', 'url', true);
+
+in the HTML File:
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.txt File:
+     Hej på dig!
+    Hafizullah Rahimi
+    Jag hoppas mår du bra.
+
+  in the JavaScript File:    
+  var request = new XMLHttpRequest();
+  request.open('Get', 'data.txt');
+  request.send();
+  if (request.status === 200) {
+      console.log(request);
+      document.write(request.responseText);
+  } else {
+      console.log('error');
+  }
+
+
+EXE2:
+.onreadystatechange
+.readyState ( is 4)
+.status (is 200)
+.writeln
+
+  in the JavaScript File: 
+  var request = new XMLHttpRequest();
+  request.open('Get', 'data.txt');
+  request.onreadystatechange= function(){
+      if((request.readyState===4)&&(request.status===200))
+      {
+          console.log(request);
+          document.writeln(request.responseText);
+      }
+  }
+  request.send();
+
+
+
+-----------------
+37
+
+ActiveXObject('Microsoft.XMLHTTP') (For old Browser)
+
+
+
+EXE1:
+ActiveXObject('Microsoft.XMLHTTP') (For old Browser) 
+
+  in the JavaScript File: 
+  var request;
+
+  if(window.XMLHttpRequest)
+  {
+      request = new XMLHttpRequest();
+  }else
+  {
+      request = new ActiveXObject('Microsoft.XMLHTTP');
+  }
+  
+  request.open('Get', 'data.txt');
+  request.onreadystatechange= function(){
+      if((request.readyState===4)&&(request.status===200))
+      {
+          console.log(request);
+          document.writeln(request.responseText);
+      }
+  }
+  request.send();
+
+
+EXE2:
+Update sidan DOM 
+
+ in the HTML File:
+     <body>
+         <h1>Ajax page</h1>
+         <div id="update"></div>
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.txt File:
+     Hej på dig!
+    Hafizullah Rahimi
+    Jag hoppas mår du bra.
+
+  in the JavaScript File: 
+  var request;
+
+  if(window.XMLHttpRequest)
+  {
+      request = new XMLHttpRequest();
+  }else
+  {
+      request = new ActiveXObject('Microsoft.XMLHTTP');
+  }
+  
+  request.open('Get', 'data.txt');
+  request.onreadystatechange= function(){
+      if((request.readyState===4)&&(request.status===200))
+      {
+          console.log(request);
+          var modify= document.getElementById('update');
+          modify.innerHTML=request.responseText ;
+          
+      }
+  }
+  request.send();  
+
+
+-----------------
+38
+
+var modify= document.getElementsByTagName('li');
+modify[6].innerHTML=request.responseText;
+
+var modify= document.getElementsByTagName('ul')[1].getElementsByTagName('li');
+modify[6].innerHTML=request.responseText;
+
+var modify= document.getElementsByTagName('ul')[1].getElementsByTagName('li');
+for(var i=0;i<modify.length;i++){
+    modify[i].innerHTML=request.responseText;
+}
+
+EXE1:
+var modify= document.getElementsByTagName('li');
+modify[6].innerHTML=request.responseText;
+
+ in the HTML File:
+     <body>
+        <h1>Ajax page</h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.txt File:
+    Hej på dig!
+    Hafizullah Rahimi
+    Jag hoppas mår du bra.
+
+  in the JavaScript File: 
+  var request;
+
+  if(window.XMLHttpRequest)
+  {
+      request = new XMLHttpRequest();
+  }else
+  {
+      request = new ActiveXObject('Microsoft.XMLHTTP');
+  }
+  
+  request.open('Get', 'data.txt');
+  request.onreadystatechange= function(){
+      if((request.readyState===4)&&(request.status===200))
+      {
+          console.log(request);
+          var modify= document.getElementsByTagName('li');
+          modify[6].innerHTML=request.responseText;
+          
+      }
+  }
+  request.send(); 
+
+
+
+EXE2:
+var modify= document.getElementsByTagName('ul')[1].getElementsByTagName('li');
+modify[6].innerHTML=request.responseText;
+
+in the HTML File:
+     <body>
+        <h1>Ajax page</h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.txt File:
+    Hej på dig!
+    Hafizullah Rahimi
+    Jag hoppas mår du bra.
+
+  in the JavaScript File: 
+  var request;
+
+  if(window.XMLHttpRequest)
+  {
+      request = new XMLHttpRequest();
+  }else
+  {
+      request = new ActiveXObject('Microsoft.XMLHTTP');
+  }
+  
+  request.open('Get', 'data.txt');
+  request.onreadystatechange= function(){
+      if((request.readyState===4)&&(request.status===200))
+      {
+          console.log(request);
+          var modify= document.getElementsByTagName('ul')[1].getElementsByTagName('li');
+          modify[6].innerHTML=request.responseText;
+          
+      }
+  }
+  request.send(); 
+
+
+EXE2:
+var modify= document.getElementsByTagName('ul')[1].getElementsByTagName('li');
+for(var i=0;i<modify.length;i++){
+    modify[i].innerHTML=request.responseText;
+}
+
+
+in the HTML File:
+     <body>
+        <h1>Ajax page</h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.txt File:
+    Hej på dig!
+    Hafizullah Rahimi
+    Jag hoppas mår du bra.
+
+  in the JavaScript File: 
+  var request;
+
+  if(window.XMLHttpRequest)
+  {
+      request = new XMLHttpRequest();
+  }else
+  {
+      request = new ActiveXObject('Microsoft.XMLHTTP');
+  }
+  
+  request.open('Get', 'data.txt');
+  request.onreadystatechange= function(){
+      if((request.readyState===4)&&(request.status===200))
+      {
+          console.log(request);
+          var modify= document.getElementsByTagName('ul')[1].getElementsByTagName('li');
+          for(var i=0;i<modify.length;i++){
+              modify[i].innerHTML=request.responseText;
+          }
+      }
+  }
+  request.send(); 
+
+
+-----------------
+39
+
+data.xml File
+.responseXML
+
+console.log(request.responseXML.getElementsByTagName('name')[1].firstChild);
+
+
+EXE1:
+XML File
+
+data.xml
+.responseXML
+
+in the HTML File:
+     <body>
+
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.xml File:
+<speakers>
+  <speaker>
+    <name>Barot Bellingham</name>
+    <shortname>Barot_Bellingham</shortname>
+    <reknown>Royal Academy of Painting and Sculpture</reknown>
+    <bio>Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different</bio>
+  </speaker>
+  <speaker>
+    <name>Jonathan G. Ferrar II</name>
+    <shortname>Jonathan_Ferrar</shortname>
+    <reknown>Artist to Watch in 2012</reknown>
+    <bio>The Artist to Watch in 2012 by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record. The piece, entitled Gratitude Resort, a work in oil and mixed media, was sold for $750,000 and Jonathan donated all the proceeds to Art for Peace, an organization that provides college art scholarships for creative children in developing nations</bio>
+  </speaker>
+  <speaker>
+    <name>Hillary Hewitt Goldwynn-Post</name>
+    <shortname>Hillary_Goldwynn</shortname>
+    <reknown>New York University</reknown>
+    <bio>Hillary is a sophomore art sculpture student at New York University, and has already won all the major international prizes for new sculptors, including the Divinity Circle, the International Sculptor's Medal, and the Academy of Paris Award. Hillary's CAC exhibit features 25 abstract watercolor paintings that contain only water images including waves, deep sea, and river.</bio>
+  </speaker>
+  <speaker>
+    <name>Hassum Harrod</name>
+    <shortname>Hassum_Harrod</shortname>
+    <reknown>Art College in New Dehli</reknown>
+    <bio>The Art College in New Dehli has sponsored Hassum on scholarship for his entire undergraduate career at the university, seeing great promise in his contemporary paintings of landscapes - that use equal parts muted and vibrant tones, and are almost a contradiction in art. Hassum will be speaking on \"The use and absence of color in modern art\" during Thursday's agenda.</bio>
+  </speaker>
+  <speaker>
+    <name>Jennifer Jerome</name>
+    <shortname>Jennifer_Jerome</shortname>
+    <reknown>New Orleans, LA</reknown>
+    <bio>A native of New Orleans, much of Jennifer's work has centered around abstract images that depict flooding and rebuilding, having grown up as a teenager in the post-flood years. Despite the sadness of devastation and lives lost, Jennifer's work also depicts the hope and togetherness of a community that has persevered. Jennifer's exhibit will be discussed during Tuesday's Water in Art theme</bio>
+  </speaker>
+  <speaker>
+    <name>LaVonne L. LaRue</name>
+    <shortname>LaVonne_LaRue</shortname>
+    <reknown>Chicago, IL</reknown>
+    <bio>LaVonne's giant-sized paintings all around Chicago tell the story of love, nature, and conservation - themes that are central to her heart. LaVonne will share her love and skill of graffiti art on Monday's schedule, as she starts the painting of a 20-foot high wall in the Rousseau Room of Hotel Contempo in front of a standing-room only audience in Art in Unexpected Places</bio>
+  </speaker>
+  <speaker>
+    <name>Constance Olivia Smith</name>
+    <shortname>Constance_Smith</shortname>
+    <reknown>Fullerton-Brighton-Norwell Award</reknown>
+    <bio>Constance received the Fullerton-Brighton-Norwell Award for Modern Art for her mixed-media image of a tree of life, with jewel-adorned branches depicting the arms of humanity, and precious gemstone-decorated leaves representing the spouting buds of togetherness. The daughter of a New York jeweler, Constance has been salvaging the discarded remnants of her father's jewelry-making since she was five years old, and won the New York State Fair grand prize at the age of 8 years old for a gem-adorned painting of the Manhattan Bridge</bio>
+  </speaker>
+  <speaker>
+    <name>Riley Rudolph Rewington</name>
+    <shortname>Riley_Rewington</shortname>
+    <reknown>Roux Academy of Art, Media, and Design</reknown>
+    <bio>A first-year student at the Roux Academy of Art, Media, and Design, Riley is already changing the face of modern art at the university. Riley's exquisite abstract pieces have no intention of ever being understood, but instead beg the viewer to dream, create, pretend, and envision with their mind's eye. Riley will be speaking on the \"Art of Abstract\" during Thursday's schedule</bio>
+  </speaker>
+  <speaker>
+    <name>Xhou Ta</name>
+    <shortname>Xhou_Ta</shortname>
+    <reknown>China International Art University</reknown>
+    <bio>A senior at the China International Art University, Xhou has become well-known for his miniature sculptures, often the size of a rice granule, that are displayed by rear projection of microscope images on canvas. Xhou will discuss the art and science behind his incredibly detailed works of art.</bio>
+  </speaker>
+</speakers>
+
+  in the JavaScript File: 
+  var request;
+
+  if(window.XMLHttpRequest)
+  {
+      request = new XMLHttpRequest();
+  }else
+  {
+      request = new ActiveXObject('Microsoft.XMLHTTP');
+  }
+  
+  request.open('Get', 'data.txt');
+  request.onreadystatechange= function(){
+      if((request.readyState===4)&&(request.status===200))
+      {
+          console.log(request.responseXML);
+      }
+  }
+  request.send(); 
+
+
+EXE2:
+console.log(request.responseXML.getElementsByTagName('name')[1].firstChild);
+
+  in the JavaScript File: 
+  var request;
+
+  if(window.XMLHttpRequest)
+  {
+      request = new XMLHttpRequest();
+  }else
+  {
+      request = new ActiveXObject('Microsoft.XMLHTTP');
+  }
+  
+  request.open('Get', 'data.txt');
+  request.onreadystatechange= function(){
+      if((request.readyState===4)&&(request.status===200))
+      {
+          console.log(request.responseXML.getElementsByTagName('name')[1].firstChild);
+      }
+  }
+  request.send();
+
+
+
+EXE3:
+
+
+in the HTML File:
+     <body>
+        <h1>Ajax page</h1>
+        <div id="update"></div>
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.xml File:
+<speakers>
+  <speaker>
+    <name>Barot Bellingham</name>
+    <shortname>Barot_Bellingham</shortname>
+    <reknown>Royal Academy of Painting and Sculpture</reknown>
+    <bio>Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different</bio>
+  </speaker>
+  <speaker>
+    <name>Jonathan G. Ferrar II</name>
+    <shortname>Jonathan_Ferrar</shortname>
+    <reknown>Artist to Watch in 2012</reknown>
+    <bio>The Artist to Watch in 2012 by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record. The piece, entitled Gratitude Resort, a work in oil and mixed media, was sold for $750,000 and Jonathan donated all the proceeds to Art for Peace, an organization that provides college art scholarships for creative children in developing nations</bio>
+  </speaker>
+  <speaker>
+    <name>Hillary Hewitt Goldwynn-Post</name>
+    <shortname>Hillary_Goldwynn</shortname>
+    <reknown>New York University</reknown>
+    <bio>Hillary is a sophomore art sculpture student at New York University, and has already won all the major international prizes for new sculptors, including the Divinity Circle, the International Sculptor's Medal, and the Academy of Paris Award. Hillary's CAC exhibit features 25 abstract watercolor paintings that contain only water images including waves, deep sea, and river.</bio>
+  </speaker>
+  <speaker>
+    <name>Hassum Harrod</name>
+    <shortname>Hassum_Harrod</shortname>
+    <reknown>Art College in New Dehli</reknown>
+    <bio>The Art College in New Dehli has sponsored Hassum on scholarship for his entire undergraduate career at the university, seeing great promise in his contemporary paintings of landscapes - that use equal parts muted and vibrant tones, and are almost a contradiction in art. Hassum will be speaking on \"The use and absence of color in modern art\" during Thursday's agenda.</bio>
+  </speaker>
+  <speaker>
+    <name>Jennifer Jerome</name>
+    <shortname>Jennifer_Jerome</shortname>
+    <reknown>New Orleans, LA</reknown>
+    <bio>A native of New Orleans, much of Jennifer's work has centered around abstract images that depict flooding and rebuilding, having grown up as a teenager in the post-flood years. Despite the sadness of devastation and lives lost, Jennifer's work also depicts the hope and togetherness of a community that has persevered. Jennifer's exhibit will be discussed during Tuesday's Water in Art theme</bio>
+  </speaker>
+  <speaker>
+    <name>LaVonne L. LaRue</name>
+    <shortname>LaVonne_LaRue</shortname>
+    <reknown>Chicago, IL</reknown>
+    <bio>LaVonne's giant-sized paintings all around Chicago tell the story of love, nature, and conservation - themes that are central to her heart. LaVonne will share her love and skill of graffiti art on Monday's schedule, as she starts the painting of a 20-foot high wall in the Rousseau Room of Hotel Contempo in front of a standing-room only audience in Art in Unexpected Places</bio>
+  </speaker>
+  <speaker>
+    <name>Constance Olivia Smith</name>
+    <shortname>Constance_Smith</shortname>
+    <reknown>Fullerton-Brighton-Norwell Award</reknown>
+    <bio>Constance received the Fullerton-Brighton-Norwell Award for Modern Art for her mixed-media image of a tree of life, with jewel-adorned branches depicting the arms of humanity, and precious gemstone-decorated leaves representing the spouting buds of togetherness. The daughter of a New York jeweler, Constance has been salvaging the discarded remnants of her father's jewelry-making since she was five years old, and won the New York State Fair grand prize at the age of 8 years old for a gem-adorned painting of the Manhattan Bridge</bio>
+  </speaker>
+  <speaker>
+    <name>Riley Rudolph Rewington</name>
+    <shortname>Riley_Rewington</shortname>
+    <reknown>Roux Academy of Art, Media, and Design</reknown>
+    <bio>A first-year student at the Roux Academy of Art, Media, and Design, Riley is already changing the face of modern art at the university. Riley's exquisite abstract pieces have no intention of ever being understood, but instead beg the viewer to dream, create, pretend, and envision with their mind's eye. Riley will be speaking on the \"Art of Abstract\" during Thursday's schedule</bio>
+  </speaker>
+  <speaker>
+    <name>Xhou Ta</name>
+    <shortname>Xhou_Ta</shortname>
+    <reknown>China International Art University</reknown>
+    <bio>A senior at the China International Art University, Xhou has become well-known for his miniature sculptures, often the size of a rice granule, that are displayed by rear projection of microscope images on canvas. Xhou will discuss the art and science behind his incredibly detailed works of art.</bio>
+  </speaker>
+</speakers>
+
+  in the JavaScript File: 
+  var request;
+
+  if(window.XMLHttpRequest)
+  {
+      request = new XMLHttpRequest();
+  }else
+  {
+      request = new ActiveXObject('Microsoft.XMLHTTP');
+  }
+  
+  request.open('Get', 'data.txt');
+  request.onreadystatechange= function(){
+      if((request.readyState===4)&&(request.status===200))
+      {
+        var items=request.responseXML.getElementsByTagName('name');
+        var output = "<ul>";
+
+        for(var i=0;i<items.length;i++){
+            output+="<li>"+items[i].firstChild.nodeValue+"</li>";
+        }
+
+        output+="</ul>";
+        document.getElementById('update').innerHTML=output;
+      }
+  }
+  request.send(); 
+
+
+
+-----------------
+40
+JSON File
+
+data.Json
+JSON.parse()
+
+key in items
+
+output+= "<li>"+items[key].name+"</li>";
+
+
+
+EXE1:
+data.Json
+JSON.parse()
+
+in the HTML File:
+     <body>
+        <h1>Ajax page</h1>
+        <div id="update"></div>
+     </body>
+     <script src="./script.js"></script>
+     </html>
+
+  in the data.json File:
+  [
+    {
+      "name":"Barot Bellingham",
+      "shortname":"Barot_Bellingham",
+      "reknown":"Royal Academy of Painting and Sculpture",
+      "bio":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different"
+    },
+    {
+      "name":"Jonathan G. Ferrar II",
+      "shortname":"Jonathan_Ferrar",
+      "reknown":"Artist to Watch in 2012",
+      "bio":"The Artist to Watch in 2012 by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record. The piece, entitled Gratitude Resort, a work in oil and mixed media, was sold for $750,000 and Jonathan donated all the proceeds to Art for Peace, an organization that provides college art scholarships for creative children in developing nations"
+    },
+    {
+      "name":"Hillary Hewitt Goldwynn-Post",
+      "shortname":"Hillary_Goldwynn",
+      "reknown":"New York University",
+      "bio":"Hillary is a sophomore art sculpture student at New York University, and has already won all the major international prizes for new sculptors, including the Divinity Circle, the International Sculptor's Medal, and the Academy of Paris Award. Hillary's CAC exhibit features 25 abstract watercolor paintings that contain only water images including waves, deep sea, and river."
+    },
+    {
+      "name":"Hassum Harrod",
+      "shortname":"Hassum_Harrod",
+      "reknown":"Art College in New Dehli",
+      "bio":"The Art College in New Dehli has sponsored Hassum on scholarship for his entire undergraduate career at the university, seeing great promise in his contemporary paintings of landscapes - that use equal parts muted and vibrant tones, and are almost a contradiction in art. Hassum will be speaking on \"The use and absence of color in modern art\" during Thursday's agenda."
+    },
+    {
+      "name":"Jennifer Jerome",
+      "shortname":"Jennifer_Jerome",
+      "reknown":"New Orleans, LA",
+      "bio":"A native of New Orleans, much of Jennifer's work has centered around abstract images that depict flooding and rebuilding, having grown up as a teenager in the post-flood years. Despite the sadness of devastation and lives lost, Jennifer's work also depicts the hope and togetherness of a community that has persevered. Jennifer's exhibit will be discussed during Tuesday's Water in Art theme."
+    },
+    {
+      "name":"LaVonne L. LaRue",
+      "shortname":"LaVonne_LaRue",
+      "reknown":"Chicago, IL",
+      "bio":"LaVonne's giant-sized paintings all around Chicago tell the story of love, nature, and conservation - themes that are central to her heart. LaVonne will share her love and skill of graffiti art on Monday's schedule, as she starts the painting of a 20-foot high wall in the Rousseau Room of Hotel Contempo in front of a standing-room only audience in Art in Unexpected Places."
+    },
+    {
+      "name":"Constance Olivia Smith",
+      "shortname":"Constance_Smith",
+      "reknown":"Fullerton-Brighton-Norwell Award",
+      "bio":"Constance received the Fullerton-Brighton-Norwell Award for Modern Art for her mixed-media image of a tree of life, with jewel-adorned branches depicting the arms of humanity, and precious gemstone-decorated leaves representing the spouting buds of togetherness. The daughter of a New York jeweler, Constance has been salvaging the discarded remnants of her father's jewelry-making since she was five years old, and won the New York State Fair grand prize at the age of 8 years old for a gem-adorned painting of the Manhattan Bridge."
+    },
+    {
+      "name":"Riley Rudolph Rewington",
+      "shortname":"Riley_Rewington",
+      "reknown":"Roux Academy of Art, Media, and Design",
+      "bio":"A first-year student at the Roux Academy of Art, Media, and Design, Riley is already changing the face of modern art at the university. Riley's exquisite abstract pieces have no intention of ever being understood, but instead beg the viewer to dream, create, pretend, and envision with their mind's eye. Riley will be speaking on the \"Art of Abstract\" during Thursday's schedule"
+    },
+    {
+      "name":"Xhou Ta",
+      "shortname":"Xhou_Ta",
+      "reknown":"China International Art University",
+      "bio":"A senior at the China International Art University, Xhou has become well-known for his miniature sculptures, often the size of a rice granule, that are displayed by rear projection of microscope images on canvas. Xhou will discuss the art and science behind his incredibly detailed works of art."
+    }
+  ]
+
+  in the JavaScript File:
+     var request;
+
+     if(window.XMLHttpRequest)
+     {
+         request = new XMLHttpRequest();
+     }else
+     {
+    request = new ActiveXObject('Microsoft.XMLHTTP');
+     }
+
+     request.open('Get', 'data.json');
+     request.onreadystatechange= function(){
+         if((request.readyState===4)&&(request.status===200))
+         {
+             var items= JSON.parse(request.responseText);
+             console.log(items);
+         }
+     }
+     request.send();
+
+
+
+EXE2:
+key in items
+
+    in the JavaScript File:
+     var request;
+
+     if(window.XMLHttpRequest)
+     {
+         request = new XMLHttpRequest();
+     }else
+     {
+    request = new ActiveXObject('Microsoft.XMLHTTP');
+     }
+
+     request.open('Get', 'data.json');
+     request.onreadystatechange= function(){
+         if((request.readyState===4)&&(request.status===200))
+         {
+             var items= JSON.parse(request.responseText);
+             
+             var output = "<ul>";
+             for (var key in items){
+                 console.log(items);
+                 // console.log(items[key]);
+             };
+             output+="</ul>";
+             document.getElementById('update').innerHTML= output;
+              }
+     }
+     request.send();
+
+
+EXE3:
+output+= "<li>"+items[key].name+"</li>";
+
+    in the JavaScript File:
+     var request;
+
+     if(window.XMLHttpRequest)
+     {
+         request = new XMLHttpRequest();
+     }else
+     {
+    request = new ActiveXObject('Microsoft.XMLHTTP');
+     }
+
+     request.open('Get', 'data.json');
+     request.onreadystatechange= function(){
+         if((request.readyState===4)&&(request.status===200))
+         {
+             var items= JSON.parse(request.responseText);
+             
+             var output = "<ul>";
+             for (var key in items){
+                 console.log(items[key]);
+                 output+= "<li>"+items[key].name+"</li>";
+             };
+             output+="</ul>";
+             document.getElementById('update').innerHTML= output;
+              }
+     }
+     request.send();
+
+EXE4:*
+
+output+= "<li>"+items[key].name+"</br>"+"</br>"+items[key].bio+"</li>"+"</br>"+"</br>";
+
+    in the JavaScript File:
+     var request;
+
+     if(window.XMLHttpRequest)
+     {
+         request = new XMLHttpRequest();
+     }else
+     {
+    request = new ActiveXObject('Microsoft.XMLHTTP');
+     }
+
+     request.open('Get', 'data.json');
+     request.onreadystatechange= function(){
+         if((request.readyState===4)&&(request.status===200))
+         {
+             var items = JSON.parse(request.responseText);
+
+             var output = '<ul>';
+             for (var key in items) {
+                 console.log(items[key]);
+                 output +=
+                     '<li>' +
+                     items[key].name +
+                     '</br>' +
+                     '</br>' +
+                     items[key].bio +
+                     '</li>' +
+                     '</br>' +
+                     '</br>';
+             }
+             output += '</ul>';
+             document.getElementById('update').innerHTML = output;
+         }
+     }
+     request.send();
+
+
+-----------------
+41
+
+<button onclick="LoadAjax()">Click me!</button>
+
+<button id="BtnLoad">Click me!</button>
+
+
+EXE1:
+<button onclick="LoadAjax()">Click me!</button>
+
+in the HTML File:
+       <body>
+        <h1>Ajax page</h1>
+        <button onclick="LoadAjax()">Click me!</button>
+        <div id="update"></div>
+       </body>
+       <script src="./script.js"></script>
+
+
+in the JavaScript File:
+    function LoadAjax(){ 
+     var request;
+
+     if(window.XMLHttpRequest)
+     {
+         request = new XMLHttpRequest();
+     }else
+     {
+    request = new ActiveXObject('Microsoft.XMLHTTP');
+     }
+
+     request.open('Get', 'data.json');
+     request.onreadystatechange= function(){
+         if((request.readyState===4)&&(request.status===200))
+         {
+             var items = JSON.parse(request.responseText);
+
+             var output = '<ul>';
+             for (var key in items) {
+                 console.log(items[key]);
+                 output +=
+                     '<li>' +
+                     items[key].name +
+                     '</br>' +
+                     '</br>' +
+                     items[key].bio +
+                     '</li>' +
+                     '</br>' +
+                     '</br>';
+             }
+             output += '</ul>';
+             document.getElementById('update').innerHTML = output;
+         }
+     }
+     request.send();
+
+     };
+
+
+EXE2:
+<button id="BtnLoad">Click me!</button>
+
+in the HTML File:
+       <body>
+        <h1>Ajax page</h1>
+        <button id="BtnLoad">Click me!</button>
+        <div id="update"></div>
+       </body>
+       <script src="./script.js"></script>
+
+
+in the JavaScript File:
+    var btn = document.getElementById('BtnLoad');
+    btn.onclick = function (){ 
+     var request;
+
+     if(window.XMLHttpRequest)
+     {
+         request = new XMLHttpRequest();
+     }else
+     {
+    request = new ActiveXObject('Microsoft.XMLHTTP');
+     }
+
+     request.open('Get', 'data.json');
+     request.onreadystatechange= function(){
+         if((request.readyState===4)&&(request.status===200))
+         {
+             var items = JSON.parse(request.responseText);
+
+             var output = '<ul>';
+             for (var key in items) {
+                 console.log(items[key]);
+                 output +=
+                     '<li>' +
+                     items[key].name +
+                     '</br>' +
+                     '</br>' +
+                     items[key].bio +
+                     '</li>' +
+                     '</br>' +
+                     '</br>';
+             }
+             output += '</ul>';
+             document.getElementById('update').innerHTML = output;
+         }
+     }
+     request.send();
+
+     };
+
+
+-----------------
+42 game
+43 - 57 games
+
+
+-----------------
+43
+ساخت بازی پرتاب سکه - بخش اول(video 43-44)
+.querySelector()
+.addEventListener("click",FunctionName)
+.target
+.innerText
+
+EXE:
+<body>
+        <div class="message"></div>
+        <button type="button">Heads</button>
+        <button type="button">Tails</button>
+    </body>
+    <!-- <script src="./script.js"></script> -->
+    <script>
+        const message = document.querySelector(".message");
+        const buttons = document.querySelectorAll("button");
+        console.log(buttons);
+        for (let i=0; i<buttons.length;i++){
+            console.log(buttons[i]);
+            buttons[i].addEventListener("click",tossCoin);
+            function tossCoin(e){
+                console.log(e.target.innerText);
+            }
+        }
+    </script>
+
+-----------------
+44
+ساخت بازی پرتاب سکه - بخش آخر
+Math.floor
+Math.random()
+score[0]++
+
+EXE:
+</body>
+    <!-- <script src="./script.js"></script> -->
+    <script>
+        const coinArray = ['Heads', 'Tails'];
+        let score = [0, 0];
+        const message = document.querySelector('.message');
+        const buttons = document.querySelectorAll('button');
+        console.log(buttons);
+        for (let i = 0; i < buttons.length; i++) {
+            console.log(buttons[i]);
+            buttons[i].addEventListener('click', tossCoin);
+
+            function tossCoin(e) {
+                let playerGuess = e.target.innerText;
+                let ComputerToss = Math.floor(Math.random()*2);
+                let computerGuess = coinArray[ComputerToss];
+                message.innerHTML = 'Computer Selected : ' + computerGuess;
+                let output;
+                if (playerGuess === computerGuess) {
+                    output = ' Player Win!';
+                    score[0]++;
+                } else {
+                    output = ' Computer Win!';
+                    score[1]++;
+                }
+                message.innerHTML +=
+                    '<br/>' +
+                    '<br/>' +
+                    output +
+                    '<br/>' +
+                    '<br/> Player : ' +
+                    score[0] +
+                    ' Computer : ' +
+                    score[1];
+            }
+        }
+    </script>
+
+
+-----------------
+45
+ساخت بازی Magic 8 Ball
+
+
+document.querySelector()
+.addEventListener("click", FunctionName )
+.value
+
+EXE:
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div>Ask your Question?</div>
+    <input type="text" class="form-control" placeholder="Your question">
+    <br>
+    <button class="btn btn-success">Ask</button>
+    <br>
+    <br>
+    <div class="message" class="alert slert-info"></div>
+    <script>
+        const answerArray = [
+            "It will work ",
+            "Maybe maybe not",
+            "I don't now"
+        ];
+        const message = document.querySelector(".message");
+        const question = document.querySelector("input");
+        const button = document.querySelector("button");
+        button.addEventListener("click", function(){
+            let res = Math.floor(Math.random()*answerArray.length);
+            message.innerHTML = question.value + " ?  <br>" + answerArray[res];
+            question.value = "";
+        });
+    </script>
+
+
+-----------------
+46 
+ساخت بازی حدس اعداد - بخش اول
+(46-49)
+
+<body>
+    <div class="game"></div>
+    <button type="button">start</button>
+    <script>
+        const gameArea = document.querySelector(".game");
+        const button = document.querySelector("button");
+
+        let gamePlay = false;
+        button.addEventListener("click" ,function(){
+            if (!gamePlay){
+                gamePlay = true;
+                maker();
+                button.innerHTML= "check Combo";
+            }else{
+                console.log("Checker");
+            }
+        });
+        function maker(){
+            for (let x =0; x<4; x++){
+                let el = document.createElement("input");
+            el.setAttribute("type","number");
+            el.max = 9;
+            el.min = 0;
+            el.size = 1;
+            el.style.width = "50px";
+            el.classList.add("numb");
+            el.value = 0;
+            el.order = x;
+            el.style.fontSize = "2em";
+            console.log(el);
+            gameArea.appendChild(el);
+            }
+        };
+    </script>
+</body>
+
+-----------------
+47
+
+<body>
+    <div class="game"></div>
+    <button type="button">start</button>
+    <script>
+        const gameArea = document.querySelector(".game");
+        const button = document.querySelector("button");
+
+        let gamePlay = false;
+        button.addEventListener("click" ,function(){
+            if (!gamePlay){
+                gamePlay = true;
+                maker();
+                button.innerHTML= "check Combo";
+            }else{
+                // console.log("Checker");
+                const numbers = document.querySelectorAll(".numb");
+                // console.log(numbers);
+                for(let i = 0; i<numbers.length; i++){
+                    // console.log(numbers[i].value);
+                    // console.log(numbers[i].correct);
+                    if(numbers[i].value == numbers[i].correct){
+                        console.log("Match");
+                    }else{
+                        console.log("No Match");
+                    }
+                }
+                
+            }
+        });
+        function maker(){
+            for (let x =0; x<6; x++){
+                let el = document.createElement("input");
+            el.setAttribute("type","number");
+            el.max = 10;
+            el.min = 0;
+            el.size = 1;
+            el.style.width = "50px";
+            el.classList.add("numb");
+            el.correct = Math.floor(Math.random()*10);
+            el.value = el.correct;
+            el.order = x;
+            el.style.fontSize = "2em";
+            // console.log(el);
+            gameArea.appendChild(el);
+            }
+        };
+    </script>
+</body>
+
+
+-----------------
+48
+
+<body>
+    <div class="message"></div>
+    <div class="game"></div>
+    <button type="button">start</button>
+    <script>
+        const gameArea = document.querySelector(".game");
+        const button = document.querySelector("button");
+        const message = document.querySelector(".message")
+        let gamePlay = false;
+        let score = 0;
+        button.addEventListener("click" ,function(){
+            if (!gamePlay){
+                gamePlay = true;
+                score= 0;
+                maker();
+                button.innerHTML= "check Combo";
+            }else{
+                const numbers = document.querySelectorAll(".numb");
+                score++;
+                message.innerHTML= "Guesses"+score;
+                let winCondition = 0;
+                for(let i = 0; i<numbers.length; i++){
+                    if(numbers[i].value == numbers[i].correct){
+                        numbers[i].style.backgroundColor = "green";
+                        numbers[i].style.color = "white";
+                        winCondition++;
+                    }else{
+                        let color = (numbers[i].value<numbers[i].correct) ? "blue" : "red";
+                        numbers[i].style.backgroundColor= color;
+                        numbers[i].style.color= "black";
+                    }
+                }
+                if (winCondition == numbers.length){
+                    console.log("Game Over");
+                }
+            }
+        });
+        function maker(){
+            for (let x =0; x<6; x++){
+                let el = document.createElement("input");
+            el.setAttribute("type","number");
+            el.max = 9;
+            el.min = 0;
+            el.size = 1;
+            el.style.width = "50px";
+            el.classList.add("numb");
+            el.correct = Math.floor(Math.random()*10);
+            el.value = 0;
+            el.order = x;
+            el.style.fontSize = "2em";
+            // console.log(el);
+            gameArea.appendChild(el);
+            }
+        };
+    </script>
+
+-----------------
+49
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+        small{
+            font-size: 0.8em;
+            font-family: sans-serif;
+        }
+        .message{
+            margin-bottom: 10px;
+        }
+        #nnn{
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <div class="message"></div>
+    <div class="game"></div>
+
+
+        
+    <button type="button" >start</button>
+
+    
+    <div>
+        <small>
+            Instructions: Guess the combo, blue means higher red means lower.  
+            <br> Try to solve it in as little guesses as possible.
+        </small>
+    </div>
+    <script>
+
+        const gameArea = document.querySelector(".game");
+        const button = document.querySelector("button");
+        const message = document.querySelector(".message");
+
+        let gamePlay = false;
+        let score = 0;
+        button.addEventListener("click" ,function(){
+            if (!gamePlay){
+                gamePlay = true;
+                gameArea.innerHTML = " ";
+                score= 0;
+                maker(4);
+                button.innerHTML= "check Combo";
+                message.innerHTML= "Guess The Game"
+            }else{
+                
+                const numbers = document.querySelectorAll(".numb");
+                score++;
+                message.innerHTML= "Guesses"+score;
+                let winCondition = 0;
+                for(let i = 0; i<numbers.length; i++){
+                    if(numbers[i].value == numbers[i].correct){
+                        numbers[i].style.backgroundColor = "green";
+                        numbers[i].style.color = "white";
+                        winCondition++;
+                    }else{
+                        let color = (numbers[i].value<numbers[i].correct) ? "blue" : "red";
+                        numbers[i].style.backgroundColor= color;
+                        numbers[i].style.color= "black";
+                    }
+                }
+                if (winCondition == numbers.length){
+                    gamaEnd();
+                }
+            }
+        });
+
+        function gamaEnd(){
+            message.innerHTML= "You Solved the combo in "+score +" Guesses";
+            gamePlay = false;
+            button.innerHTML = "Restart Game";
+        }
+
+
+        function maker(num){
+            for (let x =0; x<num; x++){
+                let el = document.createElement("input");
+            el.setAttribute("type","number");
+            el.max = 9;
+            el.min = 0;
+            el.size = 1;
+            el.style.width = "50px";
+            el.classList.add("numb");
+            el.correct = Math.floor(Math.random()*10);
+            el.value = 0;
+            el.order = x;
+            el.style.fontSize = "2em";
+            // console.log(el);
+            gameArea.appendChild(el);
+            }
+        };
+    </script>
+</body>
+</html>
+
+
+-----------------
+50 بازی حدس کلمات
+(50-52)
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TopLearn.com</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message"></div>
+    <input type="text" class="hidden">
+    <button type="button">Start</button>
+    <script>
+        const message = document.querySelector(".message");
+        const guess = document.querySelector("input");
+        const button = document.querySelector("button");
+        const myArray = ["ایمان", "پرهام", "سارا", "رضا", "مینا", "محسن", "محمد", "عماد"];
+        let inPlay = false;
+
+        button.addEventListener("click", function () {
+            console.log("Clicked");
+            if (!inPlay) {
+                inPlay = true;
+                button.innerHTML = "Guess";
+                guess.classList.toggle("hidden");
+            }
+        });
+    </script>
+</body>
+-----------------
+51
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TopLearn.com</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message"></div>
+    <input type="text" class="hidden">
+    <button type="button">Start</button>
+    <script>
+        const message = document.querySelector(".message");
+        const guess = document.querySelector("input");
+        const button = document.querySelector("button");
+        const myArray = ["ایمان", "پرهام", "سارا", "رضا", "مینا", "محسن", "محمد", "عماد"];
+        let inPlay = false;
+
+        button.addEventListener("click", function () {
+            console.log("Clicked");
+            if (!inPlay) {
+                inPlay = true;
+                button.innerHTML = "Guess";
+                guess.classList.toggle("hidden");
+                console.log(createWord());
+
+            }
+        });
+
+        function createWord() {
+            let randomIndex = Math.floor(Math.random() * myArray.length);
+            let tempWord = myArray[randomIndex];
+            let rand = randomArray(tempWord.split(""));
+            message.innerHTML = rand.join("");
+            return tempWord;
+
+        }
+
+        function randomArray(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                let temp = arr[i];
+
+                let j = Math.floor(Math.random() * (i + 1));
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+            return arr;
+        }
+    </script>
+</body>
+-----------------
+52
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TopLearn.com</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message"></div>
+    <input type="text" class="hidden">
+    <button type="button">Start</button>
+    <script>
+        const message = document.querySelector(".message");
+        const guess = document.querySelector("input");
+        const button = document.querySelector("button");
+        const myArray = ["ایمان", "پرهام", "سارا", "رضا", "مینا", "محسن", "محمد", "عماد"];
+        let inPlay = false;
+        let scramble = "";
+        let scrambled = "";
+        let score = 0;
+        button.addEventListener("click", function () {
+            console.log("Clicked");
+            if (!inPlay) {
+                inPlay = true;
+                button.innerHTML = "Guess";
+                guess.classList.toggle("hidden");
+                guess.value = "";
+                scramble = createWord();
+                scrambled = randomArray(scramble.split("")).join("");
+                message.innerHTML = scrambled;
+            } else {
+                let tempGuess = guess.value;
+                score++;
+                if (tempGuess === scramble) {
+                    inPlay = false;
+                    message.innerHTML = "Correct it was " + scramble + " it look " + score + " guesses";
+                    button.innerHTML = "Start";
+                    guess.classList.toggle("hidden");
+                }
+                else {
+                    message.innerHTML = "Wrong " + scrambled;
+                }
+
+            }
+        });
+
+        function createWord() {
+            let randomIndex = Math.floor(Math.random() * myArray.length);
+            let tempWord = myArray[randomIndex];
+            return tempWord;
+
+        }
+
+        function randomArray(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                let temp = arr[i];
+
+                let j = Math.floor(Math.random() * (i + 1));
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+            return arr;
+        }
+    </script>
+</body>
+
+-----------------
+53
+(53-56)
+بازی تایمر معکوس 
+
+-----------------
+57
+ساخت ماشین حساب با جاوا اسکریپت
+
+-----------------
+58 شروع فصل جدید - جاوا اسکریپت برای طراحان وب
+60 - 74
+
+
+
+-----------------
+59 کارکردن با Input ها توسط Java Script
+
+Input in JavaScript and show in chrome
+
+-----------------
+60
+selectedIndex
+option[]        information nästa video
+
+-----------------
+61
+.checked
+document.querySelector("input[name= r_method]:checked");
+document.querySelector("input[name= r_method]:checked").value;
+document.querySelectorAll("input[name= r_method]");
+
+-----------------
+62
+
+1- .addEventListener("event", namefunction);
+      
+      event(click, submit, play, select, show 
+      och HTML DOM Events:https://www.w3schools.com/jsref/dom_obj_event.asp)
+      The document.addEventListener() method attaches an event handler to the document.
+
+      Tip: Use the document.removeEventListener() method to remove an event handler that has been attached with the addEventListener() method.
+
+      Tip: Use the element.addEventListener() method to attach an event handler to a specified element.
+
+
+2- event.preventDefault()
+
+     The preventDefault() method cancels the event if it is cancelable, 
+     meaning that the default action that belongs to the event will not occur.
+
+     For example, this can be useful when:
+         Clicking on a "Submit" button, prevent it from submitting a form
+         Clicking on a link, prevent the link from following the URL
+
+     Note: Not all events are cancelable. 
+     Use the cancelable property to find out if an event is cancelable.
+
+     Note: The preventDefault() method does not prevent further propagation of an event through the DOM. 
+     Use the stopPropagation() method to handle this.
+
+
+EXE:
+
+(function() {
+	
+    document.getElementById("cart-hplus").addEventListener("submit", calTotal);
+    function calTotal(event){
+        event.preventDefault();
+        console.log("you submitted the form");
+    }
+})();
+
+
+-----------------
+63
+
+.focus()
+
+(function() {
+    document.getElementById("cart-hplus").addEventListener("submit", calTotal);
+    function calTotal(){
+        var state = document.getElementById("s-state");
+        if(state.value === '')
+        {
+            alert("State hase not valeo!");
+            state.focus();
+        }
+    }
+})();
+
+
+-----------------
+64
+
+1- .addEventListener('DOMContentLoaded',function)
+                    link Learning:
+                       https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event
+
+2- .addEventListener('change',function()
+
+3- buttonObject.disabled (for button)
+                    Link Learning:
+                        https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
+
+
+OR 
+
+EXE1:
+(function() {
+    "use strict";
+    var state = document.getElementById("s-state");
+
+    var btnForm = document.getElementById("btn-estimate");
+
+    document.addEventListener('DOMContentLoaded',function(){
+
+        btnForm.disabled= true;
+
+        state.addEventListener('change',function(){
+            if(state.value===''){
+                btnForm.disabled= true;
+            }else{
+                btnForm.disabled= false;
+            }
+        })
+    });
+
+})();
+
+EXE2:
+(function() {
+    "use strict";
+    var state = document.getElementById("s-state");
+
+    var btnForm = document.getElementById("btn-estimate");
+
+    document.addEventListener('DOMContentLoaded',function(){
+
+        btnForm.disabled= true;
+
+        state.addEventListener('change',function(){
+            btnForm.disabled=(state.value==='');
+        })
+    });
+
+})();
+
+-----------------
+65
+(function() {
+    "use strict";
+    var state= document.getElementById('s-state');
+
+    document.addEventListener('DOMContentLoaded',function(){
+
+        document.getElementById('cart-hplus').addEventListener('submit',calTotal);
+
+
+        var btn=document.getElementById('btn-estimate');
+        btn.disabled=true;
+        state.addEventListener('change',function(){
+
+            btn.disabled=(state.value ==='');
+
+        });
+
+    });
+    function calTotal(event) {
+        event.preventDefault();
+
+        var state =document.getElementById('s-state');
+        if(state.value==='')
+        {
+            alert('please choose your shipping state.');
+            state.focus();
+        }
+
+
+
+
+        var itemBall = document.getElementById("txt-q-bball").value,
+        itemJersey = document.getElementById("txt-q-jersey").value,
+        itemPower = document.getElementById("txt-q-power").value,
+        shippingState = state.value,
+        shippingMethod = document.querySelector('[name =r_method]:checked').value;
+    }
+})();
+
+-----------------
+66
+EXE:
+
+(function() {
+    "use strict";
+    var state= document.getElementById('s-state');
+
+    document.addEventListener('DOMContentLoaded',function(){
+
+        document.getElementById('cart-hplus').addEventListener('submit',calTotal);
+
+
+        var btn=document.getElementById('btn-estimate');
+        btn.disabled=true;
+        state.addEventListener('change',function(){
+
+            btn.disabled=(state.value ==='');
+
+        });
+
+    });
+    function calTotal(event) {
+        event.preventDefault();
+
+        var state =document.getElementById('s-state');
+        if(state.value==='')
+        {
+            alert('please choose your shipping state.');
+            state.focus();
+        }
+
+
+
+
+        var itemBall = document.getElementById("txt-q-bball").value,
+        itemJersey = document.getElementById("txt-q-jersey").value,
+        itemPower = document.getElementById("txt-q-power").value,
+        shippingState = state.value,
+        shippingMethod = document.querySelector('[name =r_method]:checked').value;
+
+        var totalQTY = itemBall + itemJersey +itemPower,
+        shippingCostPer,
+        shippingCost,
+        taxtFactor = 1,
+        estimate,
+        totalItemPrice = (90 * itemBall) + (25 * itemJersey) + (30 * itemPower);
+
+        if (shippingState === 'CA'){
+            taxtFactor = 1.075;
+
+        }
+        switch(shippingMethod){
+            case 'usps':
+                {
+                    shippingCostPer=2;
+                    break;
+                }
+            case 'ups':
+                {
+                    shippingCostPer=3;
+                    break;
+                }
+            default:
+                {
+                    shippingCostPer=0;
+                }
+        }
+
+        shippingCost = shippingCostPer * totalQTY;
+        estimate =(totalItemPrice * taxtFactor) + shippingCost;
+        document.getElementById("txt-estimate").value = estimate;
+
+
+        console.log(itemBall,itemJersey,itemPower,shippingState,shippingMethod);
+    }
+
+
+})();
+
+
+-----------------
+67
+1- parseInt()
+    Link to Learning:
+           https://medium.com/@cristi.nord/javascript-parseint-c6b2a271f153
+
+2- ||0
+   EXE:   parseInt( document.getElementById("txt-q-bball").value, 10)||0;
+          (||0 betyder att om value har "", måste vara 0)
+
+3- .toFixed(2)
+    Link to Learning:
+          https://www.techonthenet.com/js/number_tofixed.php
+
+EXE:
+(function() {
+    "use strict";
+    var state= document.getElementById('s-state');
+
+    document.addEventListener('DOMContentLoaded',function(){
+
+        document.getElementById('cart-hplus').addEventListener('submit',calTotal);
+
+
+        var btn=document.getElementById('btn-estimate');
+        btn.disabled=true;
+        state.addEventListener('change',function(){
+
+            btn.disabled=(state.value ==='');
+
+        });
+
+    });
+    function calTotal(event) {
+        event.preventDefault();
+
+        var state =document.getElementById('s-state');
+        if(state.value==='')
+        {
+            alert('please choose your shipping state.');
+            state.focus();
+        }
+
+
+        var itemBall =parseInt( document.getElementById("txt-q-bball").value, 10)||0,
+        itemJersey = parseInt(document.getElementById("txt-q-jersey").value, 10)||0,
+        itemPower = parseInt(document.getElementById("txt-q-power").value, 10)||0,
+        shippingState = state.value,
+        shippingMethod = document.querySelector('[name =r_method]:checked').value || "";
+
+        var totalQTY = itemBall + itemJersey +itemPower,
+        shippingCostPer,
+        shippingCost,
+        taxtFactor = 1,
+        estimate,
+        totalItemPrice = (90 * itemBall) + (25 * itemJersey) + (30 * itemPower);
+
+        if (shippingState === 'CA'){
+            taxtFactor = 1.075;
+
+        }
+        switch(shippingMethod){
+            case 'usps':
+                {
+                    shippingCostPer=2;
+                    break;
+                }
+            case 'ups':
+                {
+                    shippingCostPer=3;
+                    break;
+                }
+            default:
+                {
+                    shippingCostPer=0;
+                }
+        }
+
+        shippingCost = shippingCostPer * totalQTY;
+        estimate ='$'+ ((totalItemPrice * taxtFactor) + shippingCost).toFixed(2);
+        document.getElementById("txt-estimate").value = estimate;
+
+    }
+
+
+})();
+
+
+-----------------
+68
+
+        shippingCost = shippingCostPer * totalQTY;
+        estimate ='$'+ ((totalItemPrice * taxtFactor) + shippingCost).toFixed(2);
+        document.getElementById("txt-estimate").value = estimate;
+
+
+        var results = document.getElementById("results");
+        results.innerHTML = 'Total Items: ' + totalQTY + '<br>';
+        results.innerHTML +='Total Shopping: $' +shippingCost.toFixed(2)+'<br>';
+        results.innerHTML +='Tax: ' +((taxtFactor-1) * 100).toFixed(2) +' %(' + shippingState + ')';
+
+
+
+-----------------
+69
+cookie
+  Link Learining:
+        https://www.w3schools.com/js/js_cookies.asp
+
+-----------------
+70
+1-BOM 
+  Browser Object Model
+    link to Learning:
+            https://www.w3schools.com/js/js_window.asp
+
+EXE:
+function bom(){
+    var w = window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+
+    var h = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+    var x = document.getElementById("demo");
+
+    x.innerHTML = "Browser inner Width: "+w +", Height: "+h;
+}
+
+
+2- Window.open()
+link to Learning:
+        https://www.w3schools.com/jsref/met_win_open.asp
+
+3- myWindow.close()
+link to Learning:
+        https://www.w3schools.com/jsref/met_win_close.asp
+
+OBS(install http-server for att funkar close())
+     1- npm i http-server
+     2- http-server
+
+EXE:
+var myWindow;
+function openF(){
+    var myWindow = window.open('',"myWindow", '_blank',"width=200;height=100;top=300")
+    myWindow.document.write("<p> Hej på dig</p>")
+}
+
+function closeF(){
+    alert('hhhh')
+    myWindow.close();
+
+-----------------
+71
+.moveTo(X,y);
+.resizeTo(width,height);
+.focus();
+
+EXE:
+<body>
+	<h1>Hafizullah Rahimi</h1>
+	<button onclick="openWin()"> open</button>
+	<button onclick="moveWin()">Move</button>
+
+	<script >
+		var myWindow;
+		function openWin(){
+            myWindow = window.open("", "myWindow", "width=200, height=100");
+            myWindow.document.write("<p>This is 'myWindow'</p>");
+		}
+		function moveWin(){
+			myWindow.moveTo(600,300);
+			myWindow.resizeTo(250,250);
+			myWindow.focus();
+		}
+	</script>
+</body>
+
+
+-----------------
+72
+setInterval(function(){},1000);
+clearInterval(FunctionName);
+
+EXE:
+
+</head>
+<body>
+	<p id="demo"></p>
+</body>
+<script>
+	var countDownDate = new Date("2020-11-11 23:59:59").getTime();
+
+	var x = setInterval(function(){
+		var nowDate = new Date().getTime();
+
+		var  distance = countDownDate - nowDate;
+
+		var days = Math.floor(distance/(1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance/(1000 * 60 * 60 * 24)) % (1000 * 60 * 60));
+		var minutes= Math.floor((distance % (1000 * 60 * 60))/(1000 * 60));
+		var seconds= Math.floor((distance % (1000*60)/1000));
+
+		var text = document.getElementById('demo');
+		text.innerHTML= days + "dag " + hours + "hour " + minutes +"minute "+ seconds +"second";
+
+		if(distance < 0){
+			clearInterval(x);
+			text.innerHTML="Finish!!";
+		} 
+	},1000);
+</script>
+
+-----------------
+73
+.which ===13       (13 = key enter)
+classList.toggle("ClassName")
+.classList.add("delete")
+
+-----------------
+74
